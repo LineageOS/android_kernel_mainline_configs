@@ -46,6 +46,30 @@
       },
       "revId": "d428526e688296767db58a675580a691ce063869",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "765a0ccc_a619a442",
+        "filename": "init/use_memfd.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-04-22T09:46:58Z",
+      "side": 1,
+      "message": "you use another trigger?\nany post-fs-data in rc scripts will run after the one in init.rc, so you can and should use the same trigger also here",
+      "parentUuid": "cbedc621_78bf9e1b",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 20
+      },
+      "revId": "d428526e688296767db58a675580a691ce063869",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
