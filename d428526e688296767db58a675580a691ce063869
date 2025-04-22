@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d771cd38_bfd36164",
+        "filename": "init/use_memfd.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-04-22T09:38:54Z",
+      "side": 1,
+      "message": "on post-fs-data\n\ninit.rc sets it there, and your .rc will always be loaded after that one so it\u0027ll override it",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 20
+      },
+      "revId": "d428526e688296767db58a675580a691ce063869",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
