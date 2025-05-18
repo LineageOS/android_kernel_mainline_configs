@@ -3,13 +3,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-phony {
-    name: "kernel_mainline_configs_init_pristine-mainline-support",
-    required: [
-        "use_memfd.rc",
-    ],
-}
-
 prebuilt_etc {
     name: "use_memfd.rc",
     src: "use_memfd.rc",
