@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f360459a_7af85819",
+        "filename": "utilities/validate_kernel_config.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-01T21:37:39Z",
+      "side": 1,
+      "message": "can you remove stray space here and other places?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 12
+      },
+      "revId": "d548bcce5edfec16a082bf3be6359dd6387b80f3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
