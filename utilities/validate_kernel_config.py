@@ -9,8 +9,12 @@ def read_config_file(file_path):
     with open(file_path, 'r') as file:
         for line in file:
             line = line.strip()
-            # Skip empty lines and comments
-            if not line or line.startswith('#'):
+            # Skip empty lines
+            if not line:
+                continue
+
+            # Skip comments
+            if line.startswith('#') and not line.startswith('# CONFIG_'):
                 continue
 
             # Match the CONFIG_KEY=value format
