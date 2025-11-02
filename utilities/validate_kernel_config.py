@@ -52,12 +52,12 @@ def validate_configs(config_file, fragment_file):
         elif config_dict[key] != fragment_value:
             mismatching.append((key, config_dict[key], fragment_value))
         else:
-            matching.append(key)
+            matching.append((key, fragment_value))
 
     # Output the results
     print("Matching entries:")
-    for entry in matching:
-        print(f"  {entry}")
+    for entry, value in matching:
+        print(f"  {entry}: '{value}'")
 
     print("\nMismatching entries:")
     for entry, actual, expected in mismatching:
