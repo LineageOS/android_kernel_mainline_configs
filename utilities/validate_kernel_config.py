@@ -43,12 +43,16 @@ def validate_configs(config_file, fragment_file):
     # Report results
     matching = []
     mismatching = []
-    missing = []
+    missing_not_set = []
+    missing_set = []
 
     for key, fragment_value in fragment_dict.items():
         # Check for missing or mismatching entries
         if key not in config_dict:
-            missing.append(key)
+            if fragment_value == None:
+                missing_not_set.append(key)
+            else:
+                missing_set.append(key)
         elif config_dict[key] != fragment_value:
             mismatching.append((key, config_dict[key], fragment_value))
         else:
@@ -63,8 +67,12 @@ def validate_configs(config_file, fragment_file):
     for entry, actual, expected in mismatching:
         print(f"  {entry}: expected '{expected}', got '{actual}'")
 
-    print("\nMissing entries:")
-    for entry in missing:
+    print("\nMissing entries that are not set:")
+    for entry in missing_not_set:
+        print(f"  {entry}")
+
+    print("\nMissing entries that are set:")
+    for entry in missing_set:
         print(f"  {entry}")
 
 
