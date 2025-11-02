@@ -1,0 +1,5 @@
+From android-16.0.0_r1 kernel/configs/b/android-6.12/android-base-conditional.xml
+
+Ignored entries:
+- CONFIG_ACPI=y and CONFIG_OF=y (purpose is just to ensure only one of them exists)
+- CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO=y (depends on compiler)
