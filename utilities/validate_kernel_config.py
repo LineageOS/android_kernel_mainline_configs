@@ -21,7 +21,11 @@ def read_config_file(file_path):
             match = re.match(r'^(CONFIG_[A-Za-z0-9_]+)=(.*)$', line)
             if match:
                 key, value = match.groups()
-                config_dict[key] = value
+                # `CONFIG_KEY=n` should equal to `# CONFIG_KEY is not set`
+                if value == "n":
+                    config_dict[key] = None
+                else:
+                    config_dict[key] = value
             # Handle the case for "# CONFIG_KEY is not set"
             elif re.match(r'^# CONFIG_[A-Za-z0-9_]+ is not set$', line):
                 key = line.split(' ')[1]
