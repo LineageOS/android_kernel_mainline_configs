@@ -65,7 +65,7 @@ def validate_configs(config_file, fragment_file):
 
     print("\nMissing entries:")
     for entry in missing:
-        print(f"  {entry} is missing")
+        print(f"  {entry}")
 
 
 if __name__ == "__main__":
