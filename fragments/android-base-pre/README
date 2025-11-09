@@ -1,1 +1,6 @@
-Based on pristine v6.16.3 and android-16.0.0_r1 kernel/configs/b/android-6.12/android-base.config
+Based on pristine v6.18.0-rc4 and android-16.0.0_r1 kernel/configs/b/android-6.12/android-base.config
+
+common.config collects commonly missing/mismatching entries on every kernel (def)configs, which might also contain dependency entries
+
+arm64.config is for arch/arm64/configs/defconfig
+x86_64.config is for arch/x86/configs/x86_64_defconfig
