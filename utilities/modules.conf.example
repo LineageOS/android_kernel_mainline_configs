@@ -1,0 +1,19 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Syntax:
+# <module name or path, wildcard supported> <flag>[,<flag>...]
+
+# All modules are copied to vendor by default
+# All modules are included in recovery by default
+
+# Load all modules on initramfs
+* initramfs
+
+# Copy all modules to recovery by default
+pattern:* recovery
+
+# zram module is a system_dlkm module
+include system_dlkm zram
