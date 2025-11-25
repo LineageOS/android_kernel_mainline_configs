@@ -1,0 +1,22 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Syntax:
+#   <module name or kernel tree path, Unix shell pattern> <flag>[,<flag>...]
+#
+# Flags:
+#   initramfs  - load module on initramfs
+#   vendor     - module is a vendor module (default)
+#   system     - module is a system module
+#   recovery   - include module in recovery image
+#   norecovery - do not include module in recovery image
+#   load       - explicitly load the module
+#   noload     - do not explicitly load the module
+
+# All modules are copied to vendor by default
+
+# zram module is a system module
+zram.ko system,load
+zsmalloc.ko system
