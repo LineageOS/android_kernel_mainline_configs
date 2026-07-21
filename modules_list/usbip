@@ -1,0 +1,4 @@
+usbip-core.ko
+usbip-host.ko
+usbip-vudc.ko
+vhci-hcd.ko
